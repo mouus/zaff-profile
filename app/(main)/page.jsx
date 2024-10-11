@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   // Array of background images
-  const backgroundImages = ['/img-1.jpg', '/img-2.jpg', '/img-3.jpg'];
+  const backgroundImages = ['/images/img-1.jpg', '/images/img-2.jpg', '/images/img-3.jpg'];
 
   // State for current image index and fade effect
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
