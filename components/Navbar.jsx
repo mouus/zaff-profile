@@ -30,9 +30,9 @@ export default function Navbar() {
         <div className="absolute right-0 top-12 bg-white shadow-md rounded-lg py-2 w-40 sm:w-48 z-50">
           <ul className="text-right">
           <Link href={'/'}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Profile</li></Link>
-          <Link href={'/accomodation'}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Accommodation</li></Link>
-          <Link href={'/contact'}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Contact</li></Link>
-          <Link href={'/about_us'}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">About Us</li></Link>
+          <Link href={'#'}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Accommodation</li></Link>
+          <Link href={'#'}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Contact</li></Link>
+          <Link href={'#'}><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">About Us</li></Link>
           </ul>
         </div>
       )}
