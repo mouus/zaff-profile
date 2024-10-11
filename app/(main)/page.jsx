@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  // Array of background images
+  // Array of background images (ensure paths and cases match exactly)
   const backgroundImages = ['/images/img-1.jpg', '/images/img-2.jpg', '/images/img-3.jpg'];
 
   // State for current image index and fade effect
@@ -79,14 +79,16 @@ export default function Home() {
       </div>
 
       <div className="mt-6 px-4 py-6">
-        <h1 className="text-3xl text-white font-bold ">Instagram</h1>
+        <h1 className="text-3xl text-white font-bold">Instagram</h1>
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-        <div className="overflow-hidden rounded-lg shadow-lg">
-            <img
+          <div className="overflow-hidden rounded-lg shadow-lg">
+            <Image
               src="https://via.placeholder.com/300"
               alt="dummy-img"
-              className="w-full h-full object-cover"
+              width={300}
+              height={300}
+              objectFit="cover"
             />
           </div>
         </div>
