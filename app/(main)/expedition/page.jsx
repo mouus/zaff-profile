@@ -33,6 +33,7 @@ export default function expedition() {
             layout="fill" // Fill the container
             objectFit="cover" // Cover the container
             className='rounded-lg'
+            alt="location"
           />
         </div>
       </div>

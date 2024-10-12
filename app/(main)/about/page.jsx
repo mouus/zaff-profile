@@ -44,9 +44,10 @@ export default function about() {
               layout='fill'
               objectFit='cover'
               className='rounded-lg'
+              alt='about'
             />
           </div>
-          <p className='text-xs text-white mt-2 text-center'>Lonu's first dive experience with Zaff in 2014</p>
+          <p className='text-xs text-white mt-2 text-center'>Lonu&lsquo;s first dive experience with Zaff in 2014</p>
         </div>
 
         {/* Second Image */}
@@ -57,6 +58,7 @@ export default function about() {
               layout='fill'
               objectFit='cover'
               className='rounded-lg'
+              alt='about'
             />
           </div>
           <p className='text-xs text-white mt-2 text-center'>Zaff leading a dive group in 2014</p>

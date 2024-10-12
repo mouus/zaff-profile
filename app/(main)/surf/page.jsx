@@ -13,7 +13,7 @@ export default function surf() {
           <p>
             Ride the waves of Fuvamulah, 
             home to some of the most exhilarating and uncrowded surf spots in the Indian Ocean. 
-            Whether you're a seasoned surfer looking for the perfect break, or a beginner eager to catch your first wave, 
+            Whether you&lsquo;re a seasoned surfer looking for the perfect break, or a beginner eager to catch your first wave, 
             Fuvamulah offers the ideal conditions for all skill levels.
           </p>
           <p className='mt-2'>
@@ -40,6 +40,7 @@ export default function surf() {
             layout="fill" // Fill the container
             objectFit="cover" // Cover the container
             className='rounded-lg'
+            alt="location"
           />
         </div>
       </div>
