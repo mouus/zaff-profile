@@ -61,7 +61,7 @@ export default function Home() {
               objectFit="cover" // Cover the container
             />
           </div>
-          <h1 className="text-white text-base sm:text-xl font-bold mt-4 custom-text-shadow">
+          <h1 className="text-white text-md text-base sm:text-lg font-bold mt-4 custom-text-shadow">
             Zafar Ali
           </h1>
           <p className="text-white text-xs sm:text-sm mt-2 py-2 max-w-md text-center">
