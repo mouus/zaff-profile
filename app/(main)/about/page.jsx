@@ -6,6 +6,18 @@ export default function about() {
   return (
     <div className='pb-5 px-1'>
       <Navbar />
+      <div className='justify-center flex mt-5'>
+        <div className='relative w-[320px] h-20'>
+            <Image 
+                src={"/images/aboutbanner.jpg"} 
+                layout='fill'
+                objectFit='cover'
+                className='rounded-lg'
+                alt='about banner'
+              />
+        </div>
+      </div>
+      
 
       {/* Title Section */}
       <h1 className='mt-5 text-center lg:text-left lg:ml-20 text-2xl lg:text-3xl font-bold text-white'>
