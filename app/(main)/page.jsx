@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   // Array of background images
-  const backgroundImages = ['/images/img1.jpg', '/images/img2.jpg', '/images/img3.jpg'];
+  const backgroundImages = ['/images/img1.jpg', '/images/img2.jpg', '/images/img3.jpg','/images/img4.jpg','/images/img5.jpg','/images/img6.jpg','/images/img7.jpg','/images/img8.jpg','/images/img9.jpg','/images/img10.jpg','/images/img11.jpg','/images/img12.jpg'];
 
   // State for current image index and fade effect
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -53,43 +53,42 @@ export default function Home() {
 
         {/* Profile Section */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px] lg:min-h-[550px] px-4 mt-2">
-          <div className="rounded-full overflow-hidden w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mt-4">
+          <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mt-4 rounded-full overflow-hidden relative">
             <Image
-              src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+              src="/images/profileimg.jpg" // Ensure this is the correct path
               alt="Profile Picture"
-              width={160}
-              height={160}
-              objectFit="cover"
+              layout="fill" // Fill the container
+              objectFit="cover" // Cover the container
             />
           </div>
           <h1 className="text-white text-base sm:text-xl font-bold mt-4 custom-text-shadow">
             Zafar Ali
           </h1>
           <p className="text-white text-xs sm:text-sm mt-2 py-2 max-w-md text-center">
-            Since 2014, Zafar Ali has been a passionate and dedicated dive instructor and surfer in
-            Fuvahmulah (FVM). With years of experience exploring the depths of the Indian Ocean and
-            riding its powerful waves, he has built a reputation for both his expertise and his love
-            for the sea. Zafar has guided countless divers, from beginners taking their first breaths
-            underwater to seasoned professionals seeking the thrill of FVM’s famous shark dives. His
-            commitment to safety, education, and conservation has made him a respected figure in the
-            diving and surfing community, where he continues to inspire others to connect with and
-            protect the marine environment he treasures.
+          Since 2014, I&lsquo;ve been leading the introduction of recreational diving in Fuvahmulah (FVM), turning my passion for the ocean into my life&lsquo;s work.
+          With years of experience as a diver and surfer, I&lsquo;ve guided countless individuals through Fuvahmulah&lsquo;s unique underwater world and exhilarating surf. 
+          From beginners to seasoned professionals seeking shark encounters, I&lsquo;m dedicated to making every experience safe and unforgettable. My commitment to marine education, 
+          safety, and conservation drives me to inspire others to explore and protect the ocean we all depend on.
           </p>
         </div>
       </div>
 
-      <div className="mt-6 px-4 py-6">
+      <div className="mt-6 px-10 py-6">
         <h1 className="text-3xl text-white font-bold ">Instagram</h1>
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-        <div className="overflow-hidden rounded-lg shadow-lg">
-            <img
-              src="https://via.placeholder.com/300"
-              alt="dummy-img"
-              className="w-full h-full object-cover"
+        {['/images/insta1.jpg', '/images/insta2.jpg', '/images/insta3.jpg', '/images/insta4.jpg', '/images/insta5.jpg', '/images/insta6.jpg', '/images/insta7.jpg', '/images/insta8.jpg'].map((src, index) => (
+          <div key={index} className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
+            <Image
+              src={src}
+              alt={`Instagram Image ${index + 1}`}
+              layout="fill" // Fill the container
+              objectFit="cover" // Ensure the image covers the container
+              className="rounded-lg"
             />
           </div>
-        </div>
+        ))}
+      </div>
       </div>
     </div>
   );
