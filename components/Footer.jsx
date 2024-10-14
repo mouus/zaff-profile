@@ -10,10 +10,14 @@ export default function Footer() {
 
         {/* Address Details */}
         <div className='flex gap-5 mt-1'>
-            <p className='text-10px '>Island: Fuvamulah</p>
+            <p className='text-10px'>Address: Zindha</p>
             <p className='text-10px '>Road: Husnuheenamagu</p>
+            <p className='text-10px '>Island: Fuvamulah</p>
             <p className='text-10px '>Country: Maldives</p>
             <p className='text-10px '>Postal code: 18012</p>
+        </div>
+        <div className='text-xs mt-1'>
+          <p>@2024 - Southern Channel Pvt Ltd, all rights reserved.</p>
         </div>
       </div>
     </div>
