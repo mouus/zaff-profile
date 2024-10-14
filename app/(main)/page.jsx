@@ -78,7 +78,7 @@ export default function Home() {
         <h1 className="text-3xl text-white font-bold ">Instagram</h1>
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-        {['/images/insta1.jpg', '/images/insta2.jpg', '/images/insta3.jpg', '/images/shark.jpg', '/images/lake.jpg', '/images/insta6.jpg', '/images/insta7.jpg', '/images/img9.jpg','/images/img14.jpg','/images/dive.jpg','/images/img11.jpg','/images/surf4.jpg'].map((src, index) => (
+        {['/images/insta1.jpg', '/images/insta2.jpg', '/images/insta3.jpg', '/images/shark2.jpg', '/images/lake.jpg', '/images/insta6.jpg', '/images/insta7.jpg', '/images/img9.jpg','/images/img14.jpg','/images/dive.jpg','/images/img11.jpg','/images/surf4.jpg'].map((src, index) => (
           <div key={index} className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
             <Image
               src={src}
