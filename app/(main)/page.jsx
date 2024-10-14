@@ -1,4 +1,5 @@
 'use client'
+import Footer from "@/components/Footer";
 // Home Component
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   // Array of background images
-  const backgroundImages = ['/images/img1.jpg', '/images/img2.jpg', '/images/img3.jpg','/images/img4.jpg','/images/img5.jpg','/images/img6.jpg','/images/img7.jpg','/images/img8.jpg','/images/img9.jpg','/images/img10.jpg','/images/img11.jpg','/images/img12.jpg'];
+  const backgroundImages = ['/images/img1.jpg', '/images/img2.jpg', '/images/img3.jpg','/images/img4.jpg','/images/img5.jpg','/images/img6.jpg','/images/img7.jpg','/images/img8.jpg','/images/img9.jpg','/images/img10.jpg','/images/img11.jpg','/images/img12.jpg','/images/img13.jpg','/images/dive.jpg'];
 
   // State for current image index and fade effect
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -77,7 +78,7 @@ export default function Home() {
         <h1 className="text-3xl text-white font-bold ">Instagram</h1>
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-        {['/images/insta1.jpg', '/images/insta2.jpg', '/images/insta3.jpg', '/images/insta4.jpg', '/images/insta5.jpg', '/images/insta6.jpg', '/images/insta7.jpg', '/images/insta8.jpg'].map((src, index) => (
+        {['/images/insta1.jpg', '/images/insta2.jpg', '/images/insta3.jpg', '/images/shark.jpg', '/images/lake.jpg', '/images/insta6.jpg', '/images/insta7.jpg', '/images/img9.jpg','/images/img14.jpg','/images/maldives.jpg','/images/img11.jpg','/images/surf4.jpg'].map((src, index) => (
           <div key={index} className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
             <Image
               src={src}
@@ -90,6 +91,7 @@ export default function Home() {
         ))}
       </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -6,4 +6,10 @@
 .custom-text-shadow {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+.text-5px {
+  font-size: 6px;
+}
+.text-10px {
+  font-size: 10px;
+}
 
