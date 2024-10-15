@@ -11,9 +11,7 @@ export default function expedition() {
         <div className='max-w-md text-white mb-6 lg:mb-0'>
           <h1 className='text-2xl font-bold mb-2'>Fuvamulah Shark Expeditions</h1>
           <p>
-            Experience the thrill of diving with Fuvamulah&lsquo;s famous tiger sharks in the crystal-clear waters of the Indian Ocean. 
-            Our expeditions offer you the chance to explore the unique underwater world of Fuvamulah, guided by experienced divers. 
-            Whether you&lsquo;re a seasoned diver or a beginner, we ensure a safe and unforgettable adventure.
+          As a native of Fuvahmulah with over 10 years of experience in the shark expedition industry, I specialize in creating unforgettable diving experiences. We provide comprehensive services, including group management with accommodations, food and beverage, boat hire, and private charter luxury options. Our fleet features modern fiberglass boats, accommodating up to 20 passengers, ensuring both comfort and safety. Each expedition is led by experienced local guides who offer deep knowledge of Fuvahmulah&lsquo;s marine life, providing you with a seamless and immersive experience, tailored to your needs.
           </p>
           <p className='mt-4'>
             <a 
